@@ -165,10 +165,8 @@ def main():
         day = statistics.mode(df['day_of_week']).upper()
         st_hour = statistics.mode(df['hour'])
         t = time.time() - start_time
-        st.text('The most common month is : %s' %mnth)
-        st.text('The most common day is : %s' %day)
-        st.text('The most common start hour is : %s ' %st_hour)
-        st.text('This took : %s seconds' %t)
+        st.text('The most common month is : %s \nThe most common day is : %s \nThe most common start hour is: %s' %(mnth, day, st_hour))
+        st.text('The time it took to run these statistics was : %s seconds' %t)
 
 ###########################################################################################################
 
